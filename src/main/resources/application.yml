@@ -1,0 +1,17 @@
+server:
+  port: 8085
+  
+spring:
+  application:
+    name: catalog
+    
+#customer:
+#  ribbon:
+#    listOfServers: localhost:8086
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka # default address
